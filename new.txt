@@ -1,0 +1,4 @@
+Name: K.Veronika Gennadyevna,
+Age: 22,
+Number of pets: 1,
+Future desired salary: 1300.
