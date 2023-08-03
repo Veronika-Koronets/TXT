@@ -1,1 +1,14 @@
+ID: 12
+ Severity: major ,
+ Priority: high ,
+ Title:  not all sections are displayed when the main page is reloaded,
+ Environment: 1. Samsung Galaxy A12 Android 12, Opera, 
+                          2. Windows 10, Opera,
+ Precondition: open Opera,
+ STR: Press restart character in address bar at the top of the page pull down on the mobile phone,
+ Expected Result: all page sections are present,  
+ Actual result: not all sections are present, 
+ Attachment: video,
+ Postcondition: none,
+ Author: @nick
 
