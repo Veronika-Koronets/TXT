@@ -22,7 +22,7 @@ Receiving objects: 100% (3/3), done.
 kv@kvPC MINGW64 /d
 $ cd TXT
 
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ ls -la
 total 13
 drwxr-xr-x 1 kv 197121 0 Aug  3 18:49 ./
