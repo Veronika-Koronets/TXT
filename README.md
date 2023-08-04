@@ -141,7 +141,9 @@ Git, Terminal, Postman, SQL, Charles
 
 ## 12. Do one-string commit
 ## 13. Send 2 files at once to an external repository
+Use git add --> git commit -m --> git push
 
+or
 ```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ git add . && git commit -m "adding preferences.txt and skills.txt" && git push
