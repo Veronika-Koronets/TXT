@@ -8,7 +8,7 @@ Im going to my new repository. Click Code-->Local-->HTTP and copy this link
 
 ```
 kv@kvPC MINGW64 /d
-$ git clone https://github.com/Veronika-Koronets/TXT2.git
+$ git clone https://github.com/Veronika-Koronets/TXT.git
 Cloning into 'TXT'...
 remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
