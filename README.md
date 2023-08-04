@@ -5,7 +5,8 @@ Going to https://github.com/Veronika-Koronets?tab=repositories, then click "New"
 
 ## 2. Clone repository to local PC
 Im going to my new repository. Click Code-->Local-->HTTP and copy this link
-``
+
+```
 kv@kvPC MINGW64 /d
 $ git clone https://github.com/Veronika-Koronets/TXT2.git
 Cloning into 'TXT2'...
@@ -13,9 +14,11 @@ remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Receiving objects: 100% (3/3), done.
-``
+```
+
 ## 3. Create new.txt file in the local repo
-``
+
+```
 kv@kvPC MINGW64 /d
 $ cd TXT2
 
@@ -26,12 +29,14 @@ drwxr-xr-x 1 kv 197121 0 Aug  3 18:49 ./
 drwxr-xr-x 1 kv 197121 0 Aug  3 18:49 ../
 drwxr-xr-x 1 kv 197121 0 Aug  3 18:49 .git/
 -rw-r--r-- 1 kv 197121 6 Aug  3 18:49 README.md
-``
+
 
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ touch new.txt
+```
 
 ## 4. Add a file for tracking
+
 ```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ git add new.txt
@@ -47,6 +52,7 @@ Changes to be committed:
 ```
 
 ## 5. Do commit file
+
 ```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ git commit -m new.txt
@@ -54,7 +60,10 @@ $ git commit -m new.txt
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 new.txt
 ```
+
 ## 6. Send the file to remote repository
+Use ``git push`` for it
+
 ```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ git push
@@ -69,6 +78,7 @@ To https://github.com/Veronika-Koronets/TXT2.git
 ```
 
 ## 7. Edit the content of the “new.txt” file - write information about yourself (full name, age, number of pets, future desired salary). Everything is written in TXT format.
+
 ```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ cat > new.txt
@@ -76,15 +86,20 @@ Name: K.Veronika Gennadyevna,
 Age: 22,
 Number of pets: 1,
 Future desired salary: 1300.
+```
 
 ## 8. Send the changes to remote repository
+When we want to commit file, that was commited before, use command ``git commit -am "file name" ``. It combine ``git add`` and ``git commit -m``
+
 ```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ git commit -am "new.txt"
 warning: in the working copy of 'new.txt', LF will be replaced by CRLF the next time Git touches it
 [main 633ad2d] new.txt
  1 file changed, 4 insertions(+)
+```
 
+```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ git push
 Enumerating objects: 5, done.
@@ -98,12 +113,14 @@ To https://github.com/Veronika-Koronets/TXT2.git
 ```
 
 ## 9. Create preferences.txt file.
+
 ```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ touch preferences.txt
 ```
 
-## 10. In the preferences.json file, add information about your preferences (Favorite movie, favorite series, favorite food, favorite season, side you would like to visit) in TXT format
+## 10. In the preferences.txt file, add information about your preferences (Favorite movie, favorite series, favorite food, favorite season, side you would like to visit) in TXT format
+
 ```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ cat > preferences.txt
@@ -112,8 +129,10 @@ $ cat > preferences.txt
  favourite_food : pizza,
  favourite_season : spring
  Country_wish_to_visit : Norway
+```
 
 ## 11. Create a file skills.txt add information about the skills that will be studied in the course in TXT format.
+
 ```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ cat > skills.txt
@@ -122,6 +141,7 @@ Git, Terminal, Postman, SQL, Charles
 
 ## 12. Do one-string commit
 ## 13. Send 2 files at once to an external repository
+
 ```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ git add . && git commit -m "adding preferences.txt and skills.txt" && git push
@@ -140,13 +160,19 @@ Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/Veronika-Koronets/TXT2.git
    633ad2d..40022e1  main -> main
 ```
+
 ## 14. Create a bug_report.txt file on the web interface
+Go to our repo, "Add file" --> "Create new file"
+
 ## 15. Make Commit changes (save) changes on the web interface
-## 16. 
+Press the button "Commit changes"
+
+## 16. Modify the bug_report.txt file on the web interface, add a bug report in TXT format.
 
 ## 17. Make Commit changes (save) changes on the web interface.
 
 ## 18. Synchronize external and local TXT repository
+
 ```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ git pull
@@ -164,6 +190,7 @@ Fast-forward
  create mode 100644 bug_report.txt
 ```
 
+```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ ls -la
 total 17
@@ -176,8 +203,6 @@ drwxr-xr-x 1 kv 197121   0 Aug  3 20:28 .git/
 -rw-r--r-- 1 kv 197121 148 Aug  3 19:09 preferences.txt
 -rw-r--r-- 1 kv 197121  37 Aug  3 19:09 skills.txt
 
-
-```
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ cat bug_report.txt
 ID: 12
@@ -194,8 +219,3 @@ ID: 12
  Postcondition: none,
  Author: @nick
 ```
-
-
-
-kv@kvPC MINGW64 /d/TXT2 (main)
-$
