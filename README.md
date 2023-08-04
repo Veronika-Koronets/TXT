@@ -1,4 +1,4 @@
-# TXT2
+# TXT
 
 ## 1. Create an external repository called XML
 Going to https://github.com/Veronika-Koronets?tab=repositories, then click "New", enter a name "TXT", make it public and choose "Add a README file" and description.
@@ -9,7 +9,7 @@ Im going to my new repository. Click Code-->Local-->HTTP and copy this link
 ```
 kv@kvPC MINGW64 /d
 $ git clone https://github.com/Veronika-Koronets/TXT2.git
-Cloning into 'TXT2'...
+Cloning into 'TXT'...
 remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
@@ -20,7 +20,7 @@ Receiving objects: 100% (3/3), done.
 
 ```
 kv@kvPC MINGW64 /d
-$ cd TXT2
+$ cd TXT
 
 kv@kvPC MINGW64 /d/TXT2 (main)
 $ ls -la
@@ -31,17 +31,17 @@ drwxr-xr-x 1 kv 197121 0 Aug  3 18:49 .git/
 -rw-r--r-- 1 kv 197121 6 Aug  3 18:49 README.md
 
 
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ touch new.txt
 ```
 
 ## 4. Add a file for tracking
 
 ```
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ git add new.txt
 
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ git status
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -54,7 +54,7 @@ Changes to be committed:
 ## 5. Do commit file
 
 ```
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ git commit -m new.txt
 [main a5aaee3] new.txt
  1 file changed, 0 insertions(+), 0 deletions(-)
@@ -65,7 +65,7 @@ $ git commit -m new.txt
 Use ``git push`` for it
 
 ```
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ git push
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
@@ -80,7 +80,7 @@ To https://github.com/Veronika-Koronets/TXT2.git
 ## 7. Edit the content of the “new.txt” file - write information about yourself (full name, age, number of pets, future desired salary). Everything is written in TXT format.
 
 ```
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ cat > new.txt
 Name: K.Veronika Gennadyevna,
 Age: 22,
@@ -92,7 +92,7 @@ Future desired salary: 1300.
 When we want to commit file, that was commited before, use command ``git commit -am "file name" ``. It combine ``git add`` and ``git commit -m``
 
 ```
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ git commit -am "new.txt"
 warning: in the working copy of 'new.txt', LF will be replaced by CRLF the next time Git touches it
 [main 633ad2d] new.txt
@@ -100,7 +100,7 @@ warning: in the working copy of 'new.txt', LF will be replaced by CRLF the next 
 ```
 
 ```
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ git push
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
@@ -115,14 +115,14 @@ To https://github.com/Veronika-Koronets/TXT2.git
 ## 9. Create preferences.txt file.
 
 ```
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ touch preferences.txt
 ```
 
 ## 10. In the preferences.txt file, add information about your preferences (Favorite movie, favorite series, favorite food, favorite season, side you would like to visit) in TXT format
 
 ```
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ cat > preferences.txt
  favourite_film: Legally_Blonde,
  favourite_series : Blacklist,
@@ -134,7 +134,7 @@ $ cat > preferences.txt
 ## 11. Create a file skills.txt add information about the skills that will be studied in the course in TXT format.
 
 ```
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ cat > skills.txt
 Git, Terminal, Postman, SQL, Charles
 ```
@@ -145,7 +145,7 @@ Use git add --> git commit -m --> git push
 
 or
 ```
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ git add . && git commit -m "adding preferences.txt and skills.txt" && git push
 warning: in the working copy of 'preferences.txt', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'skills.txt', LF will be replaced by CRLF the next time Git touches it
@@ -176,7 +176,7 @@ Press the button "Commit changes"
 ## 18. Synchronize external and local TXT repository
 
 ```
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ git pull
 remote: Enumerating objects: 7, done.
 remote: Counting objects: 100% (7/7), done.
@@ -193,7 +193,7 @@ Fast-forward
 ```
 
 ```
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ ls -la
 total 17
 drwxr-xr-x 1 kv 197121   0 Aug  3 20:28 ./
@@ -205,7 +205,7 @@ drwxr-xr-x 1 kv 197121   0 Aug  3 20:28 .git/
 -rw-r--r-- 1 kv 197121 148 Aug  3 19:09 preferences.txt
 -rw-r--r-- 1 kv 197121  37 Aug  3 19:09 skills.txt
 
-kv@kvPC MINGW64 /d/TXT2 (main)
+kv@kvPC MINGW64 /d/TXT (main)
 $ cat bug_report.txt
 ID: 12
  Severity: major ,
